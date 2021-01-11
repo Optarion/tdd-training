@@ -6,5 +6,7 @@
 import isLeapYear from '../leapYear'
 
 test('leapYear', () => {
-    expect(isLeapYear(1944)).toEqual(true)
+    describe('should return true if year is divisible by 400', () => {
+        expect(isLeapYear(400)).toEqual(true)
+    })
 })
