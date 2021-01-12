@@ -22,3 +22,11 @@ test('leapYear', () => {
         expect(isLeapYear(2016)).toEqual(true)
     })
 })
+
+// Pas sûr d'être bon dans mes choix de tests. J'ai fait ça un peu incrémentalement mais j'étais pas trop sûr de moi :(
+
+// Pb lors du 'should return true if year is divisible by 4 but not by 100'
+// le test est déjà OK parce que je return true dans tous les cas... pourtant, la condition n'est pas testée. Comment je fais ?
+
+
+// Comment je fais pour faire cet algo en TDD si je n'ai pas à l'avance les cas de test?
