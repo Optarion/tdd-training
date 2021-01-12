@@ -15,4 +15,10 @@ test('leapYear', () => {
         expect(isLeapYear(3)).toEqual(false)
         expect(isLeapYear(5)).toEqual(false)
     })
+
+    describe('should return true if year is divisible by 4 but not by 100', () => {
+        expect(isLeapYear(2008)).toEqual(true)
+        expect(isLeapYear(2012)).toEqual(true)
+        expect(isLeapYear(2016)).toEqual(true)
+    })
 })
