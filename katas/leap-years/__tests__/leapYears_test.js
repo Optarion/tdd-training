@@ -21,6 +21,12 @@ test('leapYear', () => {
         expect(isLeapYear(2012)).toEqual(true)
         expect(isLeapYear(2016)).toEqual(true)
     })
+
+    describe('should return false if year is divisible by 100 but not by 400', () => {
+        expect(isLeapYear(1700)).toEqual(false)
+        expect(isLeapYear(1800)).toEqual(false)
+        expect(isLeapYear(1900)).toEqual(false)
+    })
 })
 
 // Pas sûr d'être bon dans mes choix de tests. J'ai fait ça un peu incrémentalement mais j'étais pas trop sûr de moi :(
@@ -28,5 +34,6 @@ test('leapYear', () => {
 // Pb lors du 'should return true if year is divisible by 4 but not by 100'
 // le test est déjà OK parce que je return true dans tous les cas... pourtant, la condition n'est pas testée. Comment je fais ?
 
+// Même pb pour le suivant. J'ai passé le default return à false pour que ça pête dans le test 3 mais maintenant ça ne pête pas le test 4 :(
 
 // Comment je fais pour faire cet algo en TDD si je n'ai pas à l'avance les cas de test?
