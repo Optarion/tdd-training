@@ -3,7 +3,7 @@
 // All years divisible by 4 but not by 100 ARE leap years (e.g., 2008, 2012, 2016),
 // All years not divisible by 4 are NOT leap years (e.g. 2017, 2018, 2019).
 
-import isLeapYear from '../leapYear'
+import isLeapYear from './leapYear'
 
 test('leapYear', () => {
     describe('should return true if year is divisible by 400', () => {
