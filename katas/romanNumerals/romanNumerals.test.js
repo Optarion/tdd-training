@@ -4,18 +4,36 @@
    3 ➔ III
    4 ➔ IV
    5 ➔ V
+   8 ➔ IIIV
    9 ➔ IX
   21 ➔ XXI
   50 ➔ L
+  80 ➔ LXXX
+  90 ➔ XC
+  99 ➔ XCIX
  100 ➔ C
+ 400 ➔ CD
  500 ➔ D
+ 900 ➔ DM
+ 999 ➔ CMXCIX
 1000 ➔ M
+2021 ➔ MMXXI
 */
 
 import toRomanNumerals from './romanNumerals';
 
 test('romanNumerals', () => {
-   describe('should return I for 1', () => {
+   describe('should return "I" for 1', () => {
       expect(toRomanNumerals(1)).toEqual('I');
    })
+
+   describe('should return "II" for 2', () => {
+      expect(toRomanNumerals(2)).toEqual('II');
+   })
+
+   describe('should return "M" for 1000', () => {
+      expect(toRomanNumerals(1000)).toEqual('M');
+   })
 });
+
+
