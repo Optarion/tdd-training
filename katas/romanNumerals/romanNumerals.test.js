@@ -52,6 +52,10 @@ test('romanNumerals', () => {
       expect(toRomanNumerals(8)).toEqual('VIII');
    })
 
+   describe('should return "IX" for 9', () => {
+      expect(toRomanNumerals(9)).toEqual('IX');
+   })
+
    describe('should return "M" for 1000', () => {
       expect(toRomanNumerals(1000)).toEqual('M');
    })
