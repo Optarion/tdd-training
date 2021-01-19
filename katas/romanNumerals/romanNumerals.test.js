@@ -40,7 +40,12 @@ test('romanNumerals', () => {
    })
 
    describe('should return "VI" for 6', () => {
+      console.log(toRomanNumerals(6))
       expect(toRomanNumerals(6)).toEqual('VI');
+   })
+
+   describe('should return "VII" for 7', () => {
+      expect(toRomanNumerals(7)).toEqual('VII');
    })
 
    describe('should return "M" for 1000', () => {
