@@ -6,6 +6,7 @@ export default number => {
     if (number < 10) return `V${'I'.repeat(number-5)}`;
     if (number === 10) return 'X';
     if (number === 11) return 'XI';
+    if (number === 12) return 'XII';
    
     if (number === 1000) return 'M';
 
