@@ -14,7 +14,7 @@
  100 ➔ C
  400 ➔ CD
  500 ➔ D
- 900 ➔ DM
+ 900 ➔ CM
  999 ➔ CMXCIX
 1000 ➔ M
 2021 ➔ MMXXI
@@ -57,6 +57,10 @@ test('romanNumerals', () => {
 
    describe('should return "X" for 10', () => {
       expect(toRomanNumerals(10)).toEqual('X');
+   })
+
+   describe('should return "XI" for 11', () => {
+      expect(toRomanNumerals(11)).toEqual('XI');
    })
 
    describe('should return "M" for 1000', () => {
