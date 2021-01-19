@@ -31,6 +31,10 @@ test('romanNumerals', () => {
       expect(toRomanNumerals(2)).toEqual('II');
    })
 
+   describe('should return "IV" for 4', () => {
+      expect(toRomanNumerals(4)).toEqual('IV');
+   })
+
    describe('should return "V" for 5', () => {
       expect(toRomanNumerals(5)).toEqual('V');
    })
