@@ -1,5 +1,5 @@
 export default number => {
-    if (number === 1) return 'I'
-    if (number === 2) return 'II'
-    if (number === 1000) return 'M'
+    if (number === 5) return 'V';
+    if (number < 10) return 'I'.repeat(number);
+    if (number === 1000) return 'M';
 };
